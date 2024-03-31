@@ -57,22 +57,53 @@
 // end of BMI calculator //////////////////////////////////////////////
 // end of BMI calculator //////////////////////////////////////////////
 
-// template literals:
+// template literals //////////////////////////////////////////////////
+// template literals //////////////////////////////////////////////////
 
-const firstName = "marcus";
-const job = "coder";
-const birthYear = 1991;
+// const firstName = "marcus";
+// const job = "coder";
+// const birthYear = 1991;
 
-const marcus = `hi there! my name is ${firstName} and I'm a ${job} and I've been coding since ${birthYear} `;
+// const marcus = `hi there! my name is ${firstName} and I'm a ${job} and I've been coding since ${birthYear} `;
 
-console.log(marcus);
+// console.log(marcus);
 
-console.log(
-  "string with \n\
-multiple \n\
-lines"
-);
+// console.log(
+//   "string with \n\
+// multiple \n\
+// lines"
+// );
 
-console.log(`string with
-multiple
-lines`);
+// console.log(`string with
+// multiple
+// lines`);
+
+// template literals //////////////////////////////////////////////////
+// template literals //////////////////////////////////////////////////
+
+// if/else //////////////////////////////////////////////////
+// if/else //////////////////////////////////////////////////
+
+const age = 19;
+
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log(`you're allowed to take driving license test.`);
+} else {
+  console.log(
+    `you can't drive just yet, you have ${18 - age} year(s) to wait.`
+  );
+}
+
+const birthYear = 2012;
+
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
