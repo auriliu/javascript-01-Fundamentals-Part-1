@@ -113,24 +113,58 @@
 // type conversion/coersion ////////////////////////////////////////
 // type conversion/coersion ////////////////////////////////////////
 
-// type conversion:
-const inputYear = "1991";
-const inputNumber = Number(inputYear);
-// converting the original value.
+// // type conversion:
+// const inputYear = "1991";
+// const inputNumber = Number(inputYear);
+// // converting the original value.
 
-console.log(inputNumber + 18); // 199118
-// converts number into a string.
+// console.log(inputNumber + 18); // 199118
+// // converts number into a string.
 
-// manual conversion:
-console.log(Number(inputYear));
-// the original value is not converted.
+// // manual conversion:
+// console.log(Number(inputYear));
+// // the original value is not converted.
 
-console.log(String(23));
-// converting a number to a string.
+// console.log(String(23));
+// // converting a number to a string.
 
-// type coersion: happens when 2 values are different.
-console.log("I'm " + 23 + " years old.");
-// "+" triggers coersion to strings.
+// // type coersion: happens when 2 values are different.
+// console.log("I'm " + 23 + " years old.");
+// // "+" triggers coersion to strings.
 
-console.log("23" - "10" - 3); //10
-// "-" triggers coersion to numbers.
+// console.log("23" - "10" - 3); //10
+// // "-" triggers coersion to numbers.
+
+// falsy/truthy values ////////////////////////////////////////
+// falsy/truthy values ////////////////////////////////////////
+
+// falsy values, not exactly false, but will become false when converting to a boolean.
+
+// the 5 falsy values: 0, "", undefined, null, NoN.
+// everything else will be converted to "true"
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(""));
+console.log(Boolean("marcus"));
+console.log(Boolean({}));
+
+// this coersion happens in if/else statements or logical operators.
+
+const money = 11;
+
+if (money) {
+  console.log("dont spend it all");
+} else {
+  console.log("get a job!");
+}
+
+// an error, is defined at 0. therefore - falsy.
+let height = 0;
+if (height) {
+  console.log("height is defined");
+} else {
+  console.log("height is NOT defined");
+}
+
+//
