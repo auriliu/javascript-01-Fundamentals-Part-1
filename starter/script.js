@@ -84,26 +84,53 @@
 // if/else //////////////////////////////////////////////////
 // if/else //////////////////////////////////////////////////
 
-const age = 19;
+// const age = 19;
 
-const isOldEnough = age >= 18;
+// const isOldEnough = age >= 18;
 
-if (isOldEnough) {
-  console.log(`you're allowed to take driving license test.`);
-} else {
-  console.log(
-    `you can't drive just yet, you have ${18 - age} year(s) to wait.`
-  );
-}
+// if (isOldEnough) {
+//   console.log(`you're allowed to take driving license test.`);
+// } else {
+//   console.log(
+//     `you can't drive just yet, you have ${18 - age} year(s) to wait.`
+//   );
+// }
 
-const birthYear = 2012;
+// const birthYear = 2012;
+// let century;
 
-let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
 
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
+// console.log(century);
 
-console.log(century);
+// if/else //////////////////////////////////////////////////
+// if/else //////////////////////////////////////////////////
+
+// type conversion/coersion ////////////////////////////////////////
+// type conversion/coersion ////////////////////////////////////////
+
+// type conversion:
+const inputYear = "1991";
+const inputNumber = Number(inputYear);
+// converting the original value.
+
+console.log(inputNumber + 18); // 199118
+// converts number into a string.
+
+// manual conversion:
+console.log(Number(inputYear));
+// the original value is not converted.
+
+console.log(String(23));
+// converting a number to a string.
+
+// type coersion: happens when 2 values are different.
+console.log("I'm " + 23 + " years old.");
+// "+" triggers coersion to strings.
+
+console.log("23" - "10" - 3); //10
+// "-" triggers coersion to numbers.
