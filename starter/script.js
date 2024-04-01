@@ -143,28 +143,42 @@
 // the 5 falsy values: 0, "", undefined, null, NoN.
 // everything else will be converted to "true"
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean(""));
-console.log(Boolean("marcus"));
-console.log(Boolean({}));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(""));
+// console.log(Boolean("marcus"));
+// console.log(Boolean({}));
 
-// this coersion happens in if/else statements or logical operators.
+// // this coersion happens in if/else statements or logical operators.
 
-const money = 11;
+// const money = 11;
 
-if (money) {
-  console.log("dont spend it all");
-} else {
-  console.log("get a job!");
-}
+// if (money) {
+//   console.log("dont spend it all");
+// } else {
+//   console.log("get a job!");
+// }
 
-// an error, is defined at 0. therefore - falsy.
-let height = 0;
-if (height) {
-  console.log("height is defined");
-} else {
-  console.log("height is NOT defined");
-}
+// // an error, is defined at 0. therefore - falsy.
+// let height = 0;
+// if (height) {
+//   console.log("height is defined");
+// } else {
+//   console.log("height is NOT defined");
+// }
 
-//
+// equality operators: == vs === ////////////////////////////////////////
+// equality operators: == vs === ////////////////////////////////////////
+
+const age = 18;
+
+if (age === 18) console.log("congratulations");
+// if just one line, no need for { }
+// = assignment, === comparison.
+// "18" == 18 //true, because == does type coersion: converts string into a number.
+
+const favorite = Number(prompt("what's ur favorite number?"));
+// the input ll be converted into a number.
+// === strict equal.
+// !== strict different.
+if (favorite !== 23) console.log("why not the 23?");
