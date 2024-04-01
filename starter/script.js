@@ -170,15 +170,41 @@
 // equality operators: == vs === ////////////////////////////////////////
 // equality operators: == vs === ////////////////////////////////////////
 
-const age = 18;
+// const age = 18;
 
-if (age === 18) console.log("congratulations");
-// if just one line, no need for { }
-// = assignment, === comparison.
-// "18" == 18 //true, because == does type coersion: converts string into a number.
+// if (age === 18) console.log("congratulations");
+// // if just one line, no need for { }
+// // = assignment, === comparison.
+// // "18" == 18 //true, because == does type coersion: converts string into a number.
 
-const favorite = Number(prompt("what's ur favorite number?"));
-// the input ll be converted into a number.
-// === strict equal.
-// !== strict different.
-if (favorite !== 23) console.log("why not the 23?");
+// const favorite = Number(prompt("what's ur favorite number?"));
+// // the input ll be converted into a number.
+// // === strict equal.
+// // !== strict different.
+// if (favorite !== 23) console.log("why not the 23?");
+
+// boolean logic ////////////////////////////////////////
+// boolean logic ////////////////////////////////////////
+// AND: both conditions must be true.
+// OR: at least 1 of the conditions must be true.
+// NOT: inverts true/false value.
+
+// logical operators ////////////////////////////////////////
+// logical operators ////////////////////////////////////////
+
+const hasLicense = true;
+const hasGoodVision = true;
+const isTired = true;
+
+// console.log(hasLicense && hasGoodVision);
+// console.log(hasLicense || hasGoodVision);
+// console.log(!hasLicense);
+
+const shouldDrive = hasLicense && hasGoodVision;
+console.log(shouldDrive);
+
+if (hasLicense && hasGoodVision && !isTired) {
+  console.log("u can drive");
+} else {
+  console.log("someone else should drive");
+}
