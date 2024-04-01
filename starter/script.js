@@ -192,19 +192,42 @@
 // logical operators ////////////////////////////////////////
 // logical operators ////////////////////////////////////////
 
-const hasLicense = true;
-const hasGoodVision = true;
-const isTired = true;
+// const hasLicense = true;
+// const hasGoodVision = true;
+// const isTired = true;
 
-// console.log(hasLicense && hasGoodVision);
-// console.log(hasLicense || hasGoodVision);
-// console.log(!hasLicense);
+// // console.log(hasLicense && hasGoodVision);
+// // console.log(hasLicense || hasGoodVision);
+// // console.log(!hasLicense);
 
-const shouldDrive = hasLicense && hasGoodVision;
-console.log(shouldDrive);
+// const shouldDrive = hasLicense && hasGoodVision;
+// console.log(shouldDrive);
 
-if (hasLicense && hasGoodVision && !isTired) {
-  console.log("u can drive");
-} else {
-  console.log("someone else should drive");
+// if (hasLicense && hasGoodVision && !isTired) {
+//   console.log("u can drive");
+// } else {
+//   console.log("someone else should drive");
+// }
+
+// switch statement ////////////////////////////////////////
+// switch statement ////////////////////////////////////////
+// compare one value with multiple different options.
+// default is executed if all other cases fail.
+// without a break code continues to execute.
+
+const day = "saturday";
+
+switch (day) {
+  case "monday": //day === "mooday"
+    console.log("monday");
+    break;
+  case "tuesday":
+    console.log("tuesday");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("weekend");
+    break;
+  default: //
+    console.log("not a valid day");
 }
